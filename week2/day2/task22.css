@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-image: url(images\ 2.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+.container .navbar{
+    background-color: beige;
+   max-width: 100%;
+   height: auto;
+    
+    
+}
+ .logoo{
+    display: inline;
+    margin-left: 400px;
+    margin-top: 20px;
+    color: grey;
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+.icon{
+    display: inline-block;
+    margin-left: 700px;
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+}
+.center h1{
+    font-size: large;
+    font-weight: 100px;
+ 
+    text-align: center;
+}
+.center h2{
+    text-decoration: doubles;
+    font-size: xx-large;
+    font-weight: 100;
+    text-align: center;
+}
+.link{
+    text-decoration-line: underline;
+    color: black;
+
+}
+.row{
+    
+    margin-top: auto;
+    display: flex;
+flex-direction: column;
+    justify-content: space-between;
+}
+.col{
+    background-color: bisque;
+}
+.row-2{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
