@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .boxx{
+        background-color: antiquewhite;
+        border: 2px black;
+        width: 600px;
+        height: 700px;
+     align-items: center;
+     justify-content: center;
+     gap: 15px;
+     display: flex;
+     flex-direction: column;
+     position: relative;
+     
+    }
+    .box{
+        background-color: red;
+        width:300px;
+        height: 100px;
+        border: 3px solid rgb(214, 88, 88);
+        margin:5px ;
+     
+    }
+    #child01{
+        
+        position:absolute;
+        right: -150px;
+        bottom: 350px;
+
+    }
+
+
+</style>
+
+
+</head>
+<body>
+    
+
+
+
+    <div class="boxx">
+        <div class="box" id="child00">child01</div>
+        <div class="box" id="child01">child02</div>
+        <div class="box" id="child02">child03</div>
+        <div class="box" id="child03">child01</div>
+        <div class="box" id="child03">child03</div>
+        <div class="box" id="child03">child03</div>
+        </div>
+        
+</body>
+</html>
