@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+}
+
+.nav{
+    max-width: 1200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+ 
+}
+.nav-left{
+    
+    display: flex;
+    align-items: center;
+}
+.logo{
+    text-decoration-style: solid;
+    color: black;
+}
+.ul{
+    
+    list-style-type: none ;
+    display: flex;
+}
+.nav ul li{  
+    padding: 20px;
+}
+
+.icon{
+    display: flex;
+    gap: 15px;
+    background-color: rgb(255, 255, 255) ;
+    border: 1px solid black;
+    color: black;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+.one{
+     padding: 50px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    background-color: rgb(58, 57, 57);
+    height: 400px;
+    width: 100%;
+}
+.hp{
+    text-align: center;
+}
+#h1{
+    font-size: 70px;
+    color: white;
+}
+#p1{
+    font-size: x-large;
+    color: rgb(138, 130, 130);
+}
+.card{
+    border: 1px solid black;
+    height: 350px;
+    width:250px;
+}
+
+.two{
+    padding: 5%;
+}
+
+.img{
+    background-image: url(https://dummyimage.com/450x300/dee2e6/6c757d.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+    height: 215px;
+}
+
+.cards .cards_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
