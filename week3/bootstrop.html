@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-download"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"
+      />
+      <path
+        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"
+      />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+      </svg>
+    <title>Document</title>
+
+    <style>
+      .navbar {
+        background-color: rgb(14, 59, 126);
+      }
+
+      .first {
+        color: white;
+        display: flex;
+        background-color: rgb(15, 155, 155);
+        align-items: center;
+        flex-direction: column;
+      }
+      .img {
+        width: 15%;
+      }
+      #two {
+ 
+        align-items: center;
+        flex-direction: column;
+      }
+      .four{
+        color: white;
+        display: flex;
+        background-color: rgb(15, 155, 155);
+        align-items: center;
+        flex-direction: column;
+      }
+    
+      .about h2{
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+      }
+               
+     
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-body-tertiary py-4">
+        <div class="container-fluid container">
+          <a class="navbar-brand">START BOOTSTRAP </a>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >PORTFOLIO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="one">
+        <div class="first">
+          <div class="img">
+            <img
+              src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg"
+              alt=""
+            />
+          </div>
+          <h1 class="h1">START BOOTSTRAP</h1>
+          <br />
+          <div class="icon"></div>
+          <br />
+          <p>Graphic Artist - Web Designer - Illustrator</p>
+        </div>
+      </section>
+
+      <section id="two">
+        <div class="second">
+          <h1>PORTFOLIO</h1>
+          <div class="container text-center">
+            <div class="row d-flex align-items-stretch g-4">
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img src="cabin.png" class="card-img-top" alt="..." />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img src="circus.png" class="card-img-top" alt="..." />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img src="cabin.png" class="card-img-top" alt="..." />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img src="game.png" class="card-img-top" alt="..." />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img src="safe.png" class="card-img-top" alt="..." />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card" style="width: 18rem">
+                  <img src="submarine.png" class="card-img-top" alt="..." />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="four ">
+               <div class="about">
+                <h2>About</h2>
+                <p><i class="bi bi-star-fill"></i></p>
+                <div  class="p d-flex row container  ">
+                    <p class="col-6">
+                        Freelancer is a free bootstrap theme created by Start Bootstrap. <br> The download includes the complete source files including HTML, <br> CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+                  <p class="col-6">
+                    You can create your own custom avatar for the masthead, change the icon in <br> the dividers, and add your email address to the contact form to make it fully functional!
+                  </p> 
+                </div>
+              <a href="#"> Free Download</a>
+             </div>
+        </div>
+        </section>
+      </section>
+
+        <div class="container">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
