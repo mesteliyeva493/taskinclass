@@ -1,9 +1,9 @@
 body{
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(168, 164, 164);
 }
 .container{
     border-radius: 5px;
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(168, 164, 164);
     width: 800px;
     height: 200px;
     border:1px solid white;
@@ -14,11 +14,11 @@ body{
     text-align: center;
 }
 .form{
- 
+  
     max-width: 1000px;
 }
 input{
-    background-color: grey;
+    background-color: rgb(235, 222, 222);
     color: rgb(247, 242, 242);
     width: 100%;
     border-radius: 5px;
@@ -41,10 +41,20 @@ button{
     width: 800px;
    
 }
+
 .tr th{
     padding: 20px;
     background-color: rgb(63, 63, 63);
-    color: rgb(192, 191, 191);
+    color: rgb(255, 255, 255);
     border: none;
  
+
+}
+#error{
+    color: red;
+    background-color: black;
+    margin: 0 auto;
+    width: 700px;
+    text-align: center;
+    display: none;
 }
