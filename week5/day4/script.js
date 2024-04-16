@@ -1,74 +1,128 @@
-// class product{
-//     constructor(id,name,price){
-//         this.id=id;
-//         this.name=name;
-//         this.price=price;
-//     }
+class Device {
+    constructor(
 
-// }
-// class Milk extends product{
-//     constructor(id,name,price,FatPercent,MadeIn){
-//         super(id,name,price);
-//         this.FatPercent =FatPercent,
-//         this.MadeIn=MadeIn;
-//     }
-// }
+        Brand,
+        Model,
+        Screensize,
+        Batterylevel,
+        price,
+        SalePrice,
+        DiscountPercentage,
+        Salecount
+    )
+  {
+    this.Brand=Brand;
+    this.Model=Model;
+    this.Screensize=Screensize
+    this.Batterylevel=Batterylevel
+    this.price=price
+    this.SalePrice=SalePrice
+    this.DiscountPercentage=DiscountPercentage
+    this.Salecount=Salecount
+    
+  }
+  calculateProfit(){
+ let profit=0
+    if(this.DiscountPercentage>0){
+        let lastPrice=this.SalePrice-(this.SalePrice*this.DiscountPercentage/100)
+        profit= (lastPrice*this.Salecount)-(this.price*this.Salecount)
+          return profit
+    }else{
+        profit= (this.SalePrice*this.Salecount)-(this.price*this.Salecount)
+    }
+  }
+displayBatteryLevel(){
+    console.log(`Battery Level: ${this.Batterylevel}%`
+    )
+  }
+  displayDetails(){
+    console.log(`Brand:${this.Brand}`,`Model:${this.Model}`,`Screensize:${this.Screensize}`)
+  }
+}
+class Phone extends Device{
+    constructor( Brand,
+        Model,
+        Screensize,
+        Batterylevel,
+        price,
+        SalePrice,
+        DiscountPercentage,
+        Salecount,
+        isSmart
+    )
+    {
+        super( Brand,
+            Model,
+            Screensize,
+            Batterylevel,
+            price,
+            SalePrice,
+            DiscountPercentage,
+            Salecount)
+            this.isSmart=isSmart
+    }
+
+}
+class Laptop extends Device{
+     constructor(
+            Brand,
+            Model,
+            Screensize,
+            Batterylevel,
+            price,
+            SalePrice,
+            DiscountPercentage,
+            Salecount,
+            isRGBkeyboard 
+            
+     )
+     {
+        super(  Brand,
+            Model,
+            Screensize,
+            Batterylevel,
+            price,
+            SalePrice,
+            DiscountPercentage,
+            Salecount,)
+            this.isRGBkeyboard=isRGBkeyboard
+     }
+}
 
 
-// let milk1=new Milk(1,"Milla",25,50,"Azerbaijan")
-// let milk2=new Milk(2,"Atena",20,40,"Azerbaijan")
-// let milk3=new Milk(3,"Palsud",18,35,"Azerbaijan")
-
-// console.log(milk1)
-// console.log(milk2)
-// console.log(milk3)
-
-//task1.1
-// const milkArrey=[milk1,milk2,milk3];
-// console.log(milkArrey)
-
-// task1.2
-// let milks=[milk1,milk2,milk3]
-// const found =milks.find((id)=>id=10)
-// console.log(found)
+const Phone1=new Phone("samsung","A32"," 5.8inches",80,500,600,8,30,true);
+const Phone2=new Phone("Iphone","11","5.9 inches",90,1700,1800,10,15,true)
 
 
-// function productId(products,id){
-//     let finded=products.find(product=>product.id === id)
-//     return  finded
-// }
-// console.log(productId(milkArrey,2))
+const Laptop1=new Phone("Dell","xps 15"," 15.8inches",90,1500,1400,7,30,true);
+const Laptop2=new Phone("Hp","spectre","15.9 inches",80,1700,1500,8,20,true);
+console.log(Laptop1.calculateProfit())
+const product =[Phone1,Phone2,Laptop1,Laptop1]
+
+console.log(product)
+
+ function FilterbyPrice(arrey,price){
+    let result=arrey.filter(product=>product.price>price)
+   let lastResult= result.map(product=>product.Brand)
+       return lastResult
+ }
+ console.log(FilterbyPrice(product,1000))
+
+
+ function FilterbyName(arrey,name){
+    return arrey.filter(product=>product.Brand===name)
+ }
+
+ console.log(FilterbyName(product,"Iphone"))
 
 
 
 
-// task1.3
+function GetTotalProfit(arrey){
 
-// function fatAverage(milkArrey)
+    let result=arrey.reduce((totalProfit,product)=>totalProfit+product.price,0)
+      return result
+ 
+}
 
-
-// task1.4
-// function filteredArr(milkArrey){
-//     const filtermMilk=milkArrey.filter(milk=>milk.FatPercent>40)
-//    return filtermMilk
-// }
-// console.log(filteredArr(milkArrey))
-
-
-// task1.5
-// function iPrice(array,number){
-//     array.forEach(element => {
-//       console.log(element.price=element.price+number);
-//      });
-// }
-// iPrice(milkArrey,20)
-
-
-// 1.6
-
-// function tPrice(array){
-//     const totalprice=array.reduce((total, item)=>total+item.price, 0)
-//     return totalprice
-
-// }
-// console.log(tPrice(milkArrey))
+console.log(GetTotalProfit(product))
