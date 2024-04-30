@@ -1,0 +1,51 @@
+
+.sone{
+    
+    display: flex;
+  align-items: center;
+   height: 750px;
+   background-image: url(https://assets.nicepagecdn.com/d2cc3eaa/2625193/images/young-rural-travellers-picnic2.jpg);
+   background-position: center;
+}
+.wrapper{
+    font-size: 25px;
+    width: 50%;
+    margin: 0px auto;
+}
+.cardo{
+    padding: 30px;
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.p1{
+
+    p{
+
+        font-weight:lighter;
+    }
+  
+}
+.cardp{
+ p{
+    a{
+        
+         color: black;
+    }
+ }
+}
+
+.btn1{
+    button{
+        font-weight: 800;
+        color: white;
+        padding: 15px 30px ;
+        border-radius: 20px;
+        background-color: rgb(195, 169, 138);
+        border: none;
+    }
+}
