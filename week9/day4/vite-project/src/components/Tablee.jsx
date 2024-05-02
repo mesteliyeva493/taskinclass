@@ -55,22 +55,20 @@ const Tablee = ({data}) => {
       title: 'shipVia',
       dataIndex: 'shipVia',
       key: 'shipVia',
-      filters: [
-        {
-          text: 'London',
-          value: 'London',
-        },
-        {
-          text: 'New York',
-          value: 'New York',
-        },
-      ],
-      filteredValue: filteredInfo.shipVia || null,
-      onFilter: (value, record) => record.shipVia.includes(value),
       sorter: (a, b) => a.shipVia.length - b.shipVia.length,
       sortOrder: sortedInfo.columnKey === 'shipVia' ? sortedInfo.order : null,
-      ellipsis: true,
+  
     },
+
+    {
+      title: 'Delete',
+      render: (text) => <Button danger>Delete</Button>,
+    },
+    {
+      title: 'Update',
+      render: (text) => <Button primary>Update</Button>,
+    },
+
   ];
   return (
     <>
