@@ -1,0 +1,36 @@
+{
+  "countries": [
+    {
+      "id": 2,
+      "name": "Canada",
+      "population": 39566248,
+      "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Canada.svg/1280px-Flag_of_Canada.svg.png",
+      "capital": "Ottava",
+      "description": " Şimali Amerikada yerləşən ölkədir"
+    },
+    {
+      "id": 3,
+      "name": "Malezya",
+      "population": 28276000,
+      "flagImg": "https://upload.wikimedia.org/wikipedia/commons/6/66/Flag_of_Malaysia.svg",
+      "capital": "KualaLumpur",
+      "description": " Cənub-Şərqi Asiyada dövlətdir"
+    },
+    {
+      "name": "slamawecfew",
+      "capital": "sxasxassa",
+      "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png",
+      "population": "12000",
+      "description": "efcwefvegerafcaedfvdgvfdgvfefefefefe",
+      "id": 4
+    },
+    {
+      "name": "slamawecfew",
+      "capital": "sxasxassa",
+      "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_the_United_States.png/1200px-Flag_of_the_United_States.png",
+      "population": "12000",
+      "description": "efcwefvegerafcaedfvdgvfdgvfefefefefe",
+      "id": 5
+    }
+  ]
+}
