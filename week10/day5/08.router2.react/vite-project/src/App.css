@@ -1,0 +1,23 @@
+.GridP{
+    padding-top: 100px;
+}
+
+.FormUser{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   padding-top: 100px;
+   gap: 10px;
+}
+.userf{
+    border-radius: 20px;
+    width: 50%;
+    padding: 20px;
+}
+.Button{
+    padding:10px 20px;
+    border-radius: 20px;
+    background-color: rgb(148, 148, 255);
+}

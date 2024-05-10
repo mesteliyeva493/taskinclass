@@ -1,0 +1,91 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "zehramesteliyeva",
+      "password": "Mz493",
+      "createdAt": "02.02.2024",
+      "email": "mesteliyeva493@gmail.com",
+      "profileImg": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
+      "balance": "200",
+      "role": "admin",
+      "basketItems": []
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Feslegen",
+      "salePrice": "10",
+      "costPrice": "12",
+      "createdAt": "03.02.2024",
+      "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbkn2E1ARLnqZji9FdfMpIgBQBPQOKSWMj5DnB3aAdtw&s",
+      "discountPercentage": "15",
+      "description": "Fesleğen ile Seyyahın son kitabı bu. ",
+      "categoryId": "1",
+      "stockCount": "250"
+    },
+    {
+      "id": "2",
+      "name": "Xestexanada Gorus",
+      "salePrice": "6",
+      "costPrice": "10",
+      "createdAt": "04.02.2024",
+      "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDhfIZSBQanV2PKFlDAjdPgGuZ57SikdTRETFL1TeDPw&s",
+      "discountPercentage": "15",
+      "description": "Povestdə bir çox elmi-fəlsəfi problemlərə anlaşıqlı və səlis üslubda aydınlıq gətirilir",
+      "categoryId": "2",
+      "stockCount": "200"
+    },
+    {
+      "id": "1",
+      "name": "Feslegen",
+      "salePrice": "10",
+      "costPrice": "12",
+      "createdAt": "03.02.2024",
+      "imgSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbkn2E1ARLnqZji9FdfMpIgBQBPQOKSWMj5DnB3aAdtw&s",
+      "discountPercentage": "15",
+      "description": "Fesleğen ile Seyyahın son kitabı bu. ",
+      "categoryId": "1",
+      "stockCount": "250"
+    }
+  ],
+  "messages": [
+    {
+      "fullName": "Xatun Nesibova",
+      "email": "X@gmail.com",
+      "title": "message",
+      "message": "messages",
+      "createdAt": "03-02-2024",
+      "id": "8b70"
+    }
+  ],
+  "orders": [
+    {
+      "userId": 1,
+      "totalPrice": 20,
+      "createdAt": "04-02-2024",
+      "items": [
+        {
+          "productId": 1,
+          "count": 2
+        },
+        {
+          "productId": 2,
+          "count": 1
+        }
+      ],
+      "id": "dfbf"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Book"
+    },
+    {
+      "id": "e818",
+      "name": "z"
+    }
+  ]
+}
