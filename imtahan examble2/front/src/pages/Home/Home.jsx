@@ -1,14 +1,18 @@
 import React from 'react'
-import Cards from '../../components/Cards'
+import Cards from './Card/Cards'
 import {Helmet} from "react-helmet";
+import Welcome from './Welcome/Welcome';
+import Hero from './Hero/Hero';
 const Home = () => {
   return (
-    <div>
+    <main>
       <Helmet>
         <title>Home</title>
       </Helmet>
+      <Hero/>
+      <Welcome/>
       <Cards/>
-    </div>
+    </main>
   )
 }
 

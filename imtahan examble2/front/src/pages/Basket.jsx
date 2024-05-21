@@ -26,6 +26,7 @@ function Basket() {
               <TableCell align="right">name</TableCell>
               <TableCell align="right">img</TableCell>
               <TableCell align="right">price</TableCell>
+              <TableCell align="right">totalprice</TableCell>
               <TableCell align="right">delete</TableCell>
               <TableCell align="right">incrase</TableCell>
               <TableCell align="right">decrease</TableCell>
@@ -43,7 +44,8 @@ function Basket() {
                 <TableCell align="right">{item.product.title}</TableCell>
                 <TableCell align="right"> <img width={60} height={60} src={item.product.img} alt="" /></TableCell>
                 <TableCell align="right">{item.product.price}</TableCell>
-                <TableCell align="right"><Button  onClick={() => deleteBasket(item._id)}>delete</Button></TableCell>
+                <TableCell align="right">{item.totalPrice}</TableCell>
+                <TableCell align="right"><Button  onClick={() => deleteBasket(item)}>delete</Button></TableCell>
                 <TableCell align="right"><Button  onClick={() => increaseItem(item)}>increase</Button></TableCell>
                 <TableCell align="right"><Button  onClick={() => decreaseItem(item)}>decrease</Button></TableCell>
               </TableRow>

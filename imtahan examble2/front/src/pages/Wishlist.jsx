@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -11,10 +11,10 @@ import mainContext from "../context/context";
 import { Button } from "@mui/material";
 
 function Wishlist() {
-  const {addBasket,wishlist,deleteWishlist} = useContext(mainContext);
+  const { addBasket, wishlist, deleteWishlist } = useContext(mainContext);
   return (
     <>
-         <Helmet>
+      <Helmet>
         <title>Wishlist</title>
       </Helmet>
       <TableContainer component={Paper}>
@@ -25,11 +25,12 @@ function Wishlist() {
               <TableCell align="right">name</TableCell>
               <TableCell align="right">img</TableCell>
               <TableCell align="right">price</TableCell>
+              <TableCell align="right">add basket</TableCell>
               <TableCell align="right">delete</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {wishlist.map((item,index) => (
+            {wishlist.map((item, index) => (
               <TableRow
                 key={index}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
@@ -37,17 +38,17 @@ function Wishlist() {
                 <TableCell component="th" scope="row">
                   {index}
                 </TableCell>
-                <TableCell align="right">{item.product.title}</TableCell>
-                <TableCell align="right"> <img width={60} height={60} src={item.product.img} alt="" /></TableCell>
-                <TableCell align="right">{item.product.price}</TableCell>
-                <TableCell align="right"><Button onClick={()=>addBasket(item)} >delete</Button></TableCell>
+                <TableCell align="right">{item.title}</TableCell>
+                <TableCell align="right"> <img width={60} height={60} src={item.img} alt="" /></TableCell>
+                <TableCell align="right">{item.price}</TableCell>
+                <TableCell align="right"><Button onClick={() => addBasket(item)} >add basket</Button></TableCell>
                 <TableCell align="right"><Button onClick={() => deleteWishlist(item)} >delete</Button></TableCell>
               </TableRow>
             ))}
           </TableBody>
         </Table>
       </TableContainer>
-      
+
     </>
   )
 }

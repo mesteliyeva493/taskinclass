@@ -1,0 +1,29 @@
+.main{
+    height:800px;
+    background-image: url("https://preview.colorlib.com/theme/eatwell/images/bg_3.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .herodesc{
+        text-align: center;
+       h1{
+        font-size: 85px;
+       }
+       p{
+        font-size: 15px;
+       }
+
+       button{
+        color: white;
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 2px solid white;
+         &:hover{
+              background-color: white;
+              color: black;
+        }
+       }
+     color: white; 
+    }
+
+}
